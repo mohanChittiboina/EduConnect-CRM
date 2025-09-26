@@ -134,17 +134,10 @@ Educational institutions face challenges in managing students, faculty, courses,
 
 ### Email Alerts  
 - Admission confirmation.  
-- Course enrollment confirmation.  
-- Alumni event invitations.  
 
 ### Tasks  
 - Auto-create task for faculty when a new student is assigned.  
 
-### Custom Notifications  
-- Notify student when assigned to course.  
-- Notify faculty when assigned to new course.  
-
----
 
 ## 📌 Phase 5: Apex Programming (Developer)  
 
