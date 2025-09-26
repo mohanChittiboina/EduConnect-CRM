@@ -150,13 +150,11 @@ Educational institutions face challenges in managing students, faculty, courses,
 ### Best Practices  
 - Bulkified triggers with handler pattern.  
 - No SOQL/DML in loops.
-- 
 ### Exception Handling  
 - Use try/catch and log exceptions to `EduConnect_Error_Log__c`.  
 
 ### Test Classes  
-- Minimum test data for Students & Enrollment triggers.  
-- Achieve >85% coverage.  
+- Minimum test data for Students & Enrollment triggers.   
 
 ---
 
