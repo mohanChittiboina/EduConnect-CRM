@@ -127,9 +127,7 @@ Educational institutions face challenges in managing students, faculty, courses,
 - If Student requests withdrawal → Approval from Faculty Advisor.  
 
 ### Flow Builder  
-- **Record-Triggered Flow** → Auto-assign advisor to new student.  
-- **Screen Flow** → Faculty update student performance.  
-- **Scheduled Flow** → Send monthly attendance reports to parents.  
+- **Notify faculty**-  when new students register
 - **Auto-launched Flow** → When Alumni record created → Send welcome email.  
 
 ### Email Alerts  
@@ -143,32 +141,21 @@ Educational institutions face challenges in managing students, faculty, courses,
 
 ### Apex Classes  
 - `StudentService` → Admission and enrollment logic.  
-- `CourseService` → Course capacity and assignment.  
-- `FacultyService` → Faculty load management.  
-- `AlumniService` → Engagement tracking.  
+- `CourseService` → Track course capacity.  
 
 ### Triggers  
 - `EnrollmentTrigger` → Auto-update student course count.  
-- `CourseTrigger` → Update capacity when student enrolls.  
 - `AlumniTrigger` → Send notification on alumni registration.  
 
 ### Best Practices  
 - Bulkified triggers with handler pattern.  
-- No SOQL/DML in loops.  
-- Centralized business logic in service classes.  
-
-### Asynchronous Apex  
-- **Batch Apex** → Update student GPA at semester end.  
-- **Queueable Apex** → Send alumni bulk invites.  
-- **Scheduled Apex** → Weekly faculty load summary.  
-- **Future Methods** → External LMS callouts.  
-
+- No SOQL/DML in loops.
+- 
 ### Exception Handling  
 - Use try/catch and log exceptions to `EduConnect_Error_Log__c`.  
 
 ### Test Classes  
-- Create test data (Students, Courses, Faculty).  
-- Test async jobs and external integrations with mocks.  
+- Minimum test data for Students & Enrollment triggers.  
 - Achieve >85% coverage.  
 
 ---
